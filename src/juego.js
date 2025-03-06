@@ -1,27 +1,14 @@
 function calcular_puntaje(puntaje_1, puntaje_2) {
-     let marcador;
- 
-     switch (`${puntaje_1}-${puntaje_2}`) {
-         case "1-0":
-             marcador = "15 - 0";
-             break;
-         case "2-0":
-             marcador = "30 - 0";
-             break;
-         case "3-0":
-             marcador = "40 - 0";
-             break;
-          case "0-1":
-             marcador = "0 - 15";
-             break;
-          case "0-2":
-             marcador = "0 - 30";
-             break; 
-         default:
-             marcador = "Love - Love";
+     const puntuaciones = ["0", "15", "30", "40"];
+     
+     let marcador_1 = puntuaciones[puntaje_1];
+     let marcador_2 = puntuaciones[puntaje_2];
+     if(puntaje_1 == 0 && puntaje_2 == 0){
+          marcador_1 = "Love";
+          marcador_2 = "Love";
      }
- 
-     return marcador;
+     return `${marcador_1} - ${marcador_2}`;
  }
  
- export default calcular_puntaje; 
+ export default calcular_puntaje;
+ 
