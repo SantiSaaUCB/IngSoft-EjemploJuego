@@ -1,10 +1,21 @@
-function calcular_puntaje(puntaje_1, puntaje_2){
-     if(puntaje_1 == 0 && puntaje_2 == 0){
-          return "Love - Love";
+function calcular_puntaje(puntaje_1, puntaje_2) {
+     let marcador;
+ 
+     switch (`${puntaje_1}-${puntaje_2}`) {
+         case "1-0":
+             marcador = "15 - 0";
+             break;
+         case "2-0":
+             marcador = "30 - 0";
+             break;
+         case "3-0":
+             marcador = "40 - 0";
+             break;
+         default:
+             marcador = "Love - Love";
      }
-     else{
-          return "15 - 0";
-     }
-};
-
-export default calcular_puntaje;
+ 
+     return marcador;
+ }
+ 
+ export default calcular_puntaje; 
