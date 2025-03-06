@@ -11,6 +11,9 @@ function calcular_puntaje(puntaje_1, puntaje_2) {
          case "3-0":
              marcador = "40 - 0";
              break;
+          case "0-1":
+             marcador = "0 - 15";
+             break;   
          default:
              marcador = "Love - Love";
      }

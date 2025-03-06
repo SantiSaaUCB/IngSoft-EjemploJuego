@@ -11,6 +11,9 @@ describe("Juego", () => {
     expect(calcular_puntaje(2, 0)).toEqual("30 - 0");
   });
   it("Si Jugador 1 hace 3 puntos, el marcador debe ser '40 - 0'.", () => {
-    expect(calcular_puntaje(2, 0)).toEqual("30 - 0");
+    expect(calcular_puntaje(3, 0)).toEqual("40 - 0");
+  });
+  it("Si Jugador 2 hace 1 punto, el marcador debe ser '0 - 15'.", () => {
+    expect(calcular_puntaje(0, 1)).toEqual("0 - 15");
   });
 });
