@@ -1,4 +1,4 @@
-function juego(puntaje_1, puntaje_2){
+function calcular_puntaje(puntaje_1, puntaje_2){
      if(puntaje_1 == 0 && puntaje_2 == 0){
           return "Love - Love";
      }
@@ -7,4 +7,4 @@ function juego(puntaje_1, puntaje_2){
      }
 };
 
-export default juego;
+export default calcular_puntaje;

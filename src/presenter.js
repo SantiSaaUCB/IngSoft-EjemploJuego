@@ -1,4 +1,4 @@
-import juego from "./juego";
+import calcular_puntaje from "./juego";
 
 const infoMarcador = document.querySelector("#info-marcador");
 const infoJuego = document.querySelector("#info-juego");

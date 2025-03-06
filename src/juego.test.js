@@ -1,4 +1,4 @@
-import juego from "./juego.js";
+import calcular_puntaje from "./juego.js";
 
 describe("Juego", () => {
   it("Debe iniciar con el marcador 'Love - Love' para ambos jugadores.", () => {
